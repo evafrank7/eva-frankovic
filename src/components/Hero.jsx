@@ -1,5 +1,8 @@
 import React from 'react'
 import eva from '../assets/images/eva.jpg'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Hero = ({
     title = "Hi, I'm Eva.",
@@ -8,9 +11,7 @@ const Hero = ({
 }) => {
     return (
         <div className="bg-[var(--background)] py-20 mb-4">
-            <div
-                className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-16"
-            >
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-16">
                 <section className="flex-1 md:text-left">
                     <div>
                         <h1 className="text-3xl sm:text-5xl md:text-6xl">
@@ -25,8 +26,10 @@ const Hero = ({
                                 View my work
                             </button>
                         </div>
-                        <div>
-                            <p> Github, LinkedIn, and email</p>
+                        <div className='flex gap-4 mt-6 text-3xl text-[var(--text)]'>
+                            <FaGithub />
+                            <FaLinkedin />
+                            <MdEmail />
                         </div>
                     </div>
                 </section>

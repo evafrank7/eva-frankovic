@@ -14,3 +14,11 @@
 * {
     color: var(--text);
 }
+
+.content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+}

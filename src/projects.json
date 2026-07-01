@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "ACCESS Account Registration/Profile Revamp",
+      "tech": "React, Python - FastAPI, Ruby on Rails, PostgreSQL, Tailwind CSS",
+      "image": "/",
+      "description": "ACCESS Allocations Revamp of Profile and Registration Process.",
+      "subDescription": "Contributed to the redesign and implementation of the ACCESS registration and profile experience, a long-standing initiative aimed at simplifying how researchers gain access to national supercomputing resources. Worked across the frontend and backend to modernize account creation, profile management, and identity validation workflows using React, TypeScript, Ruby on Rails, and Python. Focused on reducing user friction and creating a more intuitive experience for researchers throughout the onboarding process.",
+      "live": "https://account.access-ci.org/",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "title": "La Prima",
+      "heading": "Work in Progress",
+      "images": ["/project-images/coffee.png"],
+      "description": "A React replica of a coffee shop website, only landing page for now.",
+      "tech": "React, Vite, JavaScript",
+      "link": "https://github.com/evafrank7/laprima",
+      "live": "/",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Finance Tracker",
+      "images": ["/project-images/finance.png"],
+      "description": "A Ruby on Rails app for tracking stock portfolios and user finances.",
+      "tech": "Ruby on Rails, PostgreSQL, Bootstrap",
+      "link": "https://github.com/evafrank7/finance-tracker",
+      "live": "https://finance-tracker-s6yz.onrender.com/users/sign_in",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "images": ["/project-images/portfolio.png"],
+      "description": "A modern developer portfolio built with Next.js and Tailwind CSS.",
+      "tech": "Next.js, Tailwind, TypeScript",
+      "link": "https://github.com/evafrank7/portfolio",
+      "live": "https://evafrank7.github.io/portfolio/",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Message Me Chat App",
+      "images": ["/project-images/message.png"],
+      "description": "A live chat app built in Rails 5 using Action Cable.",
+      "tech": "Ruby on Rails, Rails, Bootstrap",
+      "link": "https://github.com/evafrank7/messageMe",
+      "live": "https://messageme-tczt.onrender.com",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "AlphaBlog",
+      "images": ["/project-images/blog.png"],
+      "description": "A full-stack Ruby on Rails blog app with user authentication, CRUD functionality, and responsive Bootstrap design.",
+      "tech": "Ruby on Rails, Rails, Bootstrap",
+      "link": "https://github.com/evafrank7/alphaBlog",
+      "live": "https://alphablog-ia2y.onrender.com/",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Movie API",
+      "images": ["/project-images/movie.png"],
+      "description": "A movie search app built with JavaScript and a public movie API to display film details, ratings, and posters in real time.",
+      "tech": "React, Vite, JavaScript",
+      "link": "https://github.com/evafrank7/movie-app",
+      "live": "https://evafrank7.github.io/movie-app/",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "PSC Impact Stores",
+      "images": ["/project-images/psc.png"],
+      "description": "An interview assignment demonstrating use of HTML, CSS, and a simple back-end component.",
+      "tech": "HTML, CSS, JSON, Bootstrap",
+      "link": "https://github.com/evafrank7/PSC?tab=readme-ov-file",
+      "live": "https://psc-kbhx.onrender.com/",
+      "featured": false
+    },
+    {
+        "id": 9,
+        "title": "React Jobs",
+        "images": ["/project-images/React-Jobs.png"],
+        "description": "An interview assignment demonstrating use of HTML, CSS, and a simple back-end component.",
+        "tech": "HTML, CSS, JSON, Bootstrap",
+        "link": "/",
+        "live": "/",
+        "featured": true
+      }
+  ]
+}

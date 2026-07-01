@@ -1,0 +1,66 @@
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const FeaturedProject = () => {
+    const [project, setProject] = useState(null);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                const res = await fetch('http://localhost:8000/projects');
+                const data = await res.json();
+                const featuredProject = data.find((project) => project.featured);
+                setProject(featuredProject);
+            } catch (error) {
+                console.error('Error fetching featured project:', error);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
+    if (!project) {
+        return null;
+    }
+
+    const projectImage = project.images?.[0] || project.image;
+
+    return (
+        <div className="bg-[var(--surface)] rounded-[25px] py-10 mb-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+                {projectImage && (
+                    <section className="flex-1">
+                        <img
+                            className="w-full max-w-md rounded-[25px]"
+                            src={projectImage}
+                            alt={project.title}
+                        />
+                    </section>
+                )}
+
+                <section className="flex-1">
+                    <p className="uppercase tracking-wide text-sm mb-2">Featured Project</p>
+                    <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+                    <p className="mb-4">{project.description}</p>
+
+                    {project.subDescription && (
+                        <p className="mb-4 text-gray-700">{project.subDescription}</p>
+                    )}
+
+                    {project.tech && (
+                        <p className="mb-6 text-sm uppercase tracking-wide">{project.tech}</p>
+                    )}
+
+                    <Link
+                        to={project.link || project.live || '#'}
+                        className="uppercase underline underline-offset-4"
+                    >
+                        View Project
+                    </Link>
+                </section>
+            </div>
+        </div>
+    );
+};
+
+export default FeaturedProject;
