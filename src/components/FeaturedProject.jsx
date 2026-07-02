@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 
 const FeaturedProject = () => {
     const [project, setProject] = useState(null);
@@ -23,10 +24,10 @@ const FeaturedProject = () => {
         return null;
     }
 
-    const projectImage = project.images?.[0] || project.image;
+    const projectImage = project.images?.[0];
 
     return (
-        <div className="bg-[var(--surface)] rounded-[25px] py-10 mb-4">
+        <div className="bg-[var(--cream)] rounded-[25px] py-10 mb-4">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
                 {projectImage && (
                     <section className="flex-1">
@@ -38,7 +39,7 @@ const FeaturedProject = () => {
                     </section>
                 )}
 
-                <section className="flex-1">
+                <section className="flex-1 w-245">
                     <p className="uppercase tracking-wide text-sm mb-2">Featured Project</p>
                     <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
                     <p className="mb-4">{project.description}</p>
@@ -55,7 +56,7 @@ const FeaturedProject = () => {
                         to={project.link || project.live || '#'}
                         className="uppercase underline underline-offset-4"
                     >
-                        View Project
+                        View Project <FaArrowRight className="inline" />
                     </Link>
                 </section>
             </div>

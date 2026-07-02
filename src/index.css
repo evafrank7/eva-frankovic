@@ -9,16 +9,30 @@
     --olive: #72795D;
     --olive-dark: #5F654C;
     --olive-light: #8E9777;
+    --coconut: #F9F8F5;
+    --cream: #F3EFEB;
 }
 
 * {
     color: var(--text);
 }
 
+body {
+    background-color: var(--coconut);
+}
+
 .content {
     display: flex;
-    gap: 2rem;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.extra {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
     margin: 0 auto;
 }

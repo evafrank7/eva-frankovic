@@ -1,8 +1,7 @@
 import React from 'react'
 import eva from '../assets/images/eva.jpg'
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import Icons  from './Icons'
+
 
 const Hero = ({
     title = "Hi, I'm Eva.",
@@ -27,9 +26,7 @@ const Hero = ({
                             </button>
                         </div>
                         <div className='flex gap-4 mt-6 text-3xl text-[var(--text)]'>
-                            <FaGithub />
-                            <FaLinkedin />
-                            <MdEmail />
+                            <Icons />
                         </div>
                     </div>
                 </section>
