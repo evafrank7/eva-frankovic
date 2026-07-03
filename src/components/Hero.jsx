@@ -1,7 +1,7 @@
 import React from 'react'
 import eva from '../assets/images/eva.jpg'
-import Icons  from './Icons'
-
+import Icons from './Icons'
+import { Link } from 'react-router-dom'
 
 const Hero = ({
     title = "Hi, I'm Eva.",
@@ -21,9 +21,12 @@ const Hero = ({
                         </h3>
                         <p> {blurb} </p>
                         <div className='mt-6'>
-                            <button className="bg-[var(--olive-dark)] !text-white inline-flex items-center justify-center px-5 py-2 rounded-full hover:bg-[var(--olive-light)] transition-colors duration-300 uppercase">
+                            <Link
+                                className="bg-[var(--olive-dark)] !text-white inline-flex items-center justify-center px-5 py-2 rounded-full hover:bg-[var(--olive-light)] transition-colors duration-300 uppercase"
+                                to="/projects"
+                            >
                                 View my work
-                            </button>
+                            </Link>
                         </div>
                         <div className='flex gap-4 mt-6 text-3xl text-[var(--text)]'>
                             <Icons />
