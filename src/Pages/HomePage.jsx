@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Skills from '../components/Skills'
+import Skills from '../components/SkillsList'
 import FeaturedProject from '../components/FeaturedProject'
 import AboutMe from '../components/AboutMe'
 import Filler from '../components/Filler'

@@ -40,12 +40,14 @@ const NavBar = () => {
                                 >
                                     Projects
                                 </NavLink>
-                                <NavLink
-                                    to="/resume"
-                                    className={linkClass}
+                                <a
+                                    href="src/assets/Resume/CV.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='uppercase'
                                 >
                                     Resume
-                                </NavLink>
+                                </a>
 
                                 <NavLink
                                     to="/"

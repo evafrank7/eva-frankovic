@@ -8,6 +8,7 @@ import {
 import MainLayout from './Layouts/MainLayout'
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
+import ProjectsPage from './Pages/ProjectsPage'
 import ProjectPage from './Pages/ProjectPage'
 
 
@@ -17,7 +18,8 @@ const App = () => {
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/projects' element={<ProjectPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectPage />} />
       </Route>
 
     )
