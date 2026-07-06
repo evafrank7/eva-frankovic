@@ -32,7 +32,7 @@ const FeaturedProject = () => {
                 {projectImage && (
                     <section className="flex-1">
                         <img
-                            className="w-full max-w-md rounded-[25px]"
+                            className="w-full max-w-md rounded-[25px] object-cover"
                             src={projectImage}
                             alt={project.title}
                         />
@@ -49,11 +49,20 @@ const FeaturedProject = () => {
                     )}
 
                     {project.tech && (
-                        <p className="mb-6 text-sm uppercase tracking-wide">{project.tech}</p>
+                        <div className="flex flex-wrap justify-start gap-2 py-4">
+                            {project.tech.map((tech) => (
+                                <span
+                                    key={tech}
+                                    className="bg-[var(--olive)] !text-[var(--cream)] px-3 py-1 rounded-lg text-sm"
+                                >
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
                     )}
 
                     <Link
-                        to={project.link || project.live || '#'}
+                        to={project.link}
                         className="uppercase underline underline-offset-4"
                     >
                         View Project <FaArrowRight className="inline" />

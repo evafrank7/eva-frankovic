@@ -39,7 +39,7 @@ const Hero = ({
                 </section>
                 <section className="flex-1 flex items-center md:justify-end">
                     <img
-                        className="h-90 w-auto rounded-[25px]"
+                        className="w-full max-w-md rounded-[25px] object-cover"
                         src={src}
                         alt="Eva Frankovic"
                     />

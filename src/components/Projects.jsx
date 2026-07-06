@@ -32,7 +32,16 @@ const Projects = () => {
                         <div className="w-2/5 text-right">
                             <h2 className='text-xl font-semibold pb-4'>{project.title}</h2>
                             <p> {project.description} </p>
-                            <p className='pb-3'> {project.tech} </p>
+                            <div className="flex flex-wrap justify-end gap-2 py-4">
+                                {project.tech.map((tech) => (
+                                    <span
+                                        key={tech}
+                                        className="bg-[var(--olive)] !text-[var(--cream)] px-3 py-1 rounded-lg text-sm"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                             <Link
                                 to={`/projects/${project.id}`}
                                 className="uppercase underline underline-offset-4"

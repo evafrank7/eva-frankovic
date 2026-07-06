@@ -13,11 +13,6 @@ const ProjectPage = () => {
                 const res = await fetch('http://localhost:8000/projects')
                 const data = await res.json()
                 const foundProject = data.find((project) => project.id === id)
-
-                console.log('id from URL:', id)
-                console.log('project ids:', data.map((project) => project.id))
-                console.log('found project:', foundProject)
-                
                 setProject(foundProject)
             } catch (error) {
                 console.error('Error fetching project:', error)
