@@ -9,6 +9,7 @@ const Hero = ({
     blurb = 'I build responsive, user-friendly web experiences with clean code and design.',
     src = eva,
     showButton = true,
+    showIcons = true,
 }) => {
     return (
         <div className="bg-[var(--background)] py-20 mb-4">
@@ -21,7 +22,7 @@ const Hero = ({
                         <h3 className="my-4 text-xl text-[var(--text)]">
                             {subtitle}
                         </h3>
-                        <p> {blurb} </p>
+                        <div> {blurb} </div>
                         {showButton && (
                             <div className='mt-6'>
                                 <Link
@@ -32,9 +33,11 @@ const Hero = ({
                                 </Link>
                             </div>
                         )}
-                        <div className='flex gap-4 mt-6 text-3xl text-[var(--text)]'>
-                            <Icons />
-                        </div>
+                        {showIcons && (
+                            <div className='flex gap-4 mt-6 text-3xl text-[var(--text)]'>
+                                <Icons />
+                            </div>
+                        )}
                     </div>
                 </section>
                 <section className="flex-1 flex items-center md:justify-end">

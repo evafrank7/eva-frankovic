@@ -13,12 +13,9 @@
     --cream: #F3EFEB;
 }
 
-* {
-    color: var(--text);
-}
-
 body {
     background-color: var(--coconut);
+    color: var(--text);
 }
 
 .content {
