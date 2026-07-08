@@ -6,7 +6,8 @@
       "images": [
         "/project-images/React-Jobs.png"
       ],
-      "description": "An interview assignment demonstrating use of HTML, CSS, and a simple back-end component.",
+      "description": "A full-stack job listing application built with React, JavaScript, Tailwind CSS, Vite, and React Router, featuring dynamic routing and a JSON Server backend.",
+      "overview": "Built a full-stack job listing application that allows users to browse, view, add, edit, and delete job postings through an interactive React interface. Used React Router to create dynamic navigation between job listings and individual job detail pages, while JSON Server provides a lightweight backend for storing and managing job data. Styled the application with Tailwind CSS to create a responsive and consistent user experience across screen sizes. This project strengthened my understanding of React component architecture, routing, CRUD operations, and connecting a frontend application to a backend API.",
       "tech": ["React", "Tailwind CSS", "JavaScript", "Vite"],
       "link": "/",
       "live": "/",
@@ -32,6 +33,7 @@
         "/project-images/coffee.png"
       ],
       "description": "A React replica of a coffee shop website, only landing page for now.",
+      "overview": "Developed a responsive React-based recreation of the La Prima coffee shop website, with an initial focus on building and styling the landing page. Used reusable React components to organize the interface and Vite to provide a streamlined development environment. Focused on translating an existing visual design into a clean, responsive web experience while strengthening my skills in component structure, layout, and frontend styling. The project is an ongoing effort with opportunities to expand the site with additional pages and functionality.",
       "tech": ["React", "Vite", "JavaScript"],
       "link": "https://github.com/evafrank7/laprima",
       "live": "/",
@@ -44,6 +46,7 @@
         "/project-images/finance.png"
       ],
       "description": "A Ruby on Rails app for tracking stock portfolios and user finances.",
+      "overview": "Built a full-stack finance application that allows users to manage personal stock portfolios and track financial information. Developed the application with Ruby on Rails and PostgreSQL, using Rails conventions to manage application logic, database relationships, and user interactions. Implemented portfolio-focused functionality within a Bootstrap-based responsive interface. This project strengthened my understanding of full-stack development, relational databases, authentication workflows, and building data-driven applications with Ruby on Rails.",
       "tech": ["Ruby on Rails", "PostgreSQL", "Bootstrap"],
       "link": "https://github.com/evafrank7/finance-tracker",
       "live": "https://finance-tracker-s6yz.onrender.com/users/sign_in",
@@ -56,6 +59,7 @@
         "/project-images/portfolio.png"
       ],
       "description": "A modern developer portfolio built with Next.js and Tailwind CSS.",
+      "overview": "Designed and developed a personal portfolio website to showcase my software development experience, technical skills, and projects. Built the interface with a focus on reusable components, responsive layouts, and creating a consistent visual identity across the site. The project provided an opportunity to combine frontend development with UI design decisions while organizing project data into reusable structures. Through continued iteration, I have focused on improving responsiveness, accessibility, navigation, and the overall user experience across different screen sizes.",
       "tech": ["Next.js", "Tailwind", "TypeScript"],
       "link": "https://github.com/evafrank7/portfolio",
       "live": "https://evafrank7.github.io/portfolio/",
@@ -68,6 +72,7 @@
         "/project-images/message.png"
       ],
       "description": "A live chat app built in Rails 5 using Action Cable.",
+      "overview": "Built a real-time chat application using Ruby on Rails and Action Cable to support live communication between users. Implemented WebSocket-based functionality so new messages can appear dynamically without requiring users to refresh the page. Used Rails to manage the application structure and backend logic while Bootstrap provided a responsive interface. This project introduced me to real-time application development and strengthened my understanding of WebSockets, Rails architecture, and interactive user experiences.",
       "tech": ["Ruby on Rails", "Rails", "Bootstrap"],
       "link": "https://github.com/evafrank7/messageMe",
       "live": "https://messageme-tczt.onrender.com",
@@ -80,6 +85,7 @@
         "/project-images/blog.png"
       ],
       "description": "A full-stack Ruby on Rails blog app with user authentication, CRUD functionality, and responsive Bootstrap design.",
+      "overview": "Developed a full-stack blogging platform with Ruby on Rails that allows users to create, read, update, and delete articles. Implemented user authentication and database-backed functionality to manage users and blog content through a structured Rails application. Used Bootstrap to create a responsive interface and improve the presentation of articles and application features. This project strengthened my understanding of CRUD operations, MVC architecture, authentication, database relationships, and full-stack application development.",
       "tech": ["Ruby on Rails", "Rails", "Bootstrap"],
       "link": "https://github.com/evafrank7/alphaBlog",
       "live": "https://alphablog-ia2y.onrender.com/",
@@ -92,6 +98,7 @@
         "/project-images/movie.png"
       ],
       "description": "A movie search app built with JavaScript and a public movie API to display film details, ratings, and posters in real time.",
+      "overview": "Built an interactive movie search application that retrieves and displays movie information from a public API. Developed the interface with React and JavaScript, allowing users to search for films and view dynamically loaded details, ratings, and poster images. Used reusable components and API requests to manage and present external data within the application. This project strengthened my understanding of asynchronous JavaScript, API integration, state management, and building responsive data-driven interfaces.",
       "tech": ["React", "Vite", "JavaScript"],
       "link": "https://github.com/evafrank7/movie-app",
       "live": "https://evafrank7.github.io/movie-app/",
@@ -104,6 +111,7 @@
         "/project-images/psc.png"
       ],
       "description": "An interview assignment demonstrating use of HTML, CSS, and a simple back-end component.",
+      "overview": "Completed a technical interview assignment focused on building a responsive web experience with HTML, CSS, Bootstrap, and JSON data. Developed the frontend interface and incorporated a lightweight backend component to demonstrate how structured data could be loaded and presented dynamically. Focused on creating a clear layout, responsive behavior, and maintainable application structure within the requirements of the assignment. This project demonstrated my ability to interpret technical requirements, work within project constraints, and deliver a functional web application.",
       "tech": ["HTML", "CSS", "JSON", "Bootstrap"],
       "link": "https://github.com/evafrank7/PSC?tab=readme-ov-file",
       "live": "https://psc-kbhx.onrender.com/",
