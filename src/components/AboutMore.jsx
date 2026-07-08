@@ -32,7 +32,7 @@ const aboutMoreItems = [
         title: 'Travel',
         Icon: FaPlaneDeparture,
         paragraphs: [
-            'I love to travel, especially Europe! I have had the ability to visit Paris, Virgin Gorda, Aruba, Turks & Caicos, and this upcoming summer, I’m heading to Greece!',
+            'I love to travel, especially abroad! I have had the ability to visit Paris, Virgin Gorda, Aruba, Turks & Caicos, and this upcoming summer, I’m heading to Greece!',
             'Although, one of my favorite places that I have visited was Salem, Massachusetts in the Fall.',
         ],
     },
