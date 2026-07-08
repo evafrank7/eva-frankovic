@@ -22,7 +22,7 @@ const Hero = ({
                         <h3 className="my-4 text-xl text-[var(--text)]">
                             {subtitle}
                         </h3>
-                        <div> {blurb} </div>
+                        <div className='text-lg'> {blurb} </div>
                         {showButton && (
                             <div className='mt-6'>
                                 <Link
