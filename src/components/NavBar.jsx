@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 
 const NavBar = () => {
-    const linkClass = 
+    const linkClass =
         ({ isActive }) => isActive
             ? 'px-4 py-4 uppercase underline underline-offset-8'
             : 'px-4 py-4 uppercase'
@@ -51,7 +51,7 @@ const NavBar = () => {
 
                                 <NavLink
                                     to="/"
-                                    className="bg-[var(--olive-dark)] !text-white inline-flex items-center justify-center px-5 py-2 rounded-full hover:bg-[var(--olive-light)] transition-colors duration-300 uppercase"
+                                    className="bg-[var(--olive-dark)] !text-white inline-flex items-center justify-center px-5 py-2 rounded-full md:justify-start hover:bg-[var(--olive-light)] transition-colors duration-300 uppercase"
                                 >
                                     Let's Connect!
                                 </NavLink>

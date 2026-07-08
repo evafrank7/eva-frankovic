@@ -27,10 +27,10 @@ const FeaturedProject = () => {
     const projectImage = project.images?.[0];
 
     return (
-        <div className="bg-[var(--cream)] rounded-[25px] py-10 mb-4">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+        <div className="bg-[var(--cream)] rounded-[25px] py-6 sm:py-8 lg:py-10 mb-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-6 lg:gap-8">
                 {projectImage && (
-                    <section className="flex-1">
+                    <section className="flex-1 w-full flex justify-center">
                         <img
                             className="w-full max-w-md rounded-[25px] object-cover"
                             src={projectImage}
@@ -39,7 +39,7 @@ const FeaturedProject = () => {
                     </section>
                 )}
 
-                <section className="flex-1 w-245">
+                <section className="flex-1 w-full min-w-0 text-center md:text-left">
                     <p className="uppercase tracking-wide text-sm mb-2">Featured Project</p>
                     <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
                     <p className="mb-4">{project.description}</p>
@@ -49,7 +49,7 @@ const FeaturedProject = () => {
                     )}
 
                     {project.tech && (
-                        <div className="flex flex-wrap justify-start gap-2 py-4">
+                        <div className="flex flex-wrap justify-center md:justify-start gap-2 py-4">
                             {project.tech.map((tech) => (
                                 <span
                                     key={tech}
