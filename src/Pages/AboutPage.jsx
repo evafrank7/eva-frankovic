@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
 import AboutMore from '../components/AboutMore'
-import Paris from '../assets/images/Paris.JPG'
+import Paris from '../assets/images/paris.JPG'
 
 const AboutPage = () => {
   return (
