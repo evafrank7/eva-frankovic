@@ -10,7 +10,7 @@ const ProjectPage = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                const res = await fetch('http://localhost:8000/projects')
+                const res = await fetch('https://eva-api-0oo2.onrender.com/projects')
                 const data = await res.json()
                 const foundProject = data.find((project) => project.id === id)
                 setProject(foundProject)

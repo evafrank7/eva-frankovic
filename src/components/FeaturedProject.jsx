@@ -8,7 +8,7 @@ const FeaturedProject = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const res = await fetch('http://localhost:8000/projects');
+                const res = await fetch('https://eva-api-0oo2.onrender.com/projects');
                 const data = await res.json();
                 const featuredProject = data.find((project) => project.featured);
                 setProject(featuredProject);
