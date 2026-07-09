@@ -9,8 +9,8 @@
       "description": "A full-stack job listing application built with React, JavaScript, Tailwind CSS, Vite, and React Router, featuring dynamic routing and a JSON Server backend.",
       "overview": "Built a full-stack job listing application that allows users to browse, view, add, edit, and delete job postings through an interactive React interface. Used React Router to create dynamic navigation between job listings and individual job detail pages, while JSON Server provides a lightweight backend for storing and managing job data. Styled the application with Tailwind CSS to create a responsive and consistent user experience across screen sizes. This project strengthened my understanding of React component architecture, routing, CRUD operations, and connecting a frontend application to a backend API.",
       "tech": ["React", "Tailwind CSS", "JavaScript", "Vite"],
-      "link": "/",
-      "live": "/",
+      "link": "https://github.com/evafrank7/react-jobs",
+      "live": "https://react-jobs-listings.onrender.com/",
       "featured": true
     },
     {
