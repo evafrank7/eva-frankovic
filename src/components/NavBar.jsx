@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
+import resume from '../assets/Resume/CV.pdf'
 
 const NavBar = () => {
     const linkClass =
@@ -41,10 +42,10 @@ const NavBar = () => {
                                     Projects
                                 </NavLink>
                                 <a
-                                    href="src/assets/Resume/CV.pdf"
+                                    href={resume}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className='uppercase'
+                                    className="uppercase"
                                 >
                                     Resume
                                 </a>
