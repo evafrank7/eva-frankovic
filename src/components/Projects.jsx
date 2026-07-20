@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
+import { FadeLoader } from 'react-spinners';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -13,11 +15,17 @@ const Projects = () => {
                 setProjects(data);
             } catch (error) {
                 console.error('Error fetching projects:', error);
+            } finally {
+                setIsLoading(false);
             }
         };
 
         fetchProjects();
     }, []);
+
+    if (isLoading){
+        return <FadeLoader />
+    }
 
     return (
         <div className="bg-[var(--background)] py-15">

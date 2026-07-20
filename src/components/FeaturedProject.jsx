@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
+import { FadeLoader } from 'react-spinners';
 
 const FeaturedProject = () => {
     const [project, setProject] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -14,6 +16,8 @@ const FeaturedProject = () => {
                 setProject(featuredProject);
             } catch (error) {
                 console.error('Error fetching featured project:', error);
+            } finally {
+                setIsLoading(false);
             }
         };
 
@@ -22,6 +26,10 @@ const FeaturedProject = () => {
 
     if (!project) {
         return null;
+    }
+
+    if(isLoading){
+        return <FadeLoader />
     }
 
     const projectImage = project.images?.[0];
