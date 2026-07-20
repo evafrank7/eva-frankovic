@@ -24,18 +24,24 @@ const FeaturedProject = () => {
         fetchProjects();
     }, []);
 
-    if (!project) {
-        return null;
+    if (isLoading) {
+        return (
+            <div className="bg-[var(--cream)] rounded-[25px] flex w-full flex-wrap justify-center md:justify-start gap-2 py-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[420px] flex items-center justify-center">
+                    <FadeLoader color="#5F654C" />
+                </div>
+            </div>
+        );
     }
 
-    if(isLoading){
-        return <FadeLoader />
+    if (!project) {
+        return null;
     }
 
     const projectImage = project.images?.[0];
 
     return (
-        <div className="bg-[var(--cream)] rounded-[25px] py-6 sm:py-8 lg:py-10 mb-4">
+        <div className="bg-[var(--cream)] rounded-[25px] py-6 sm:py-8 lg:py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-6 lg:gap-8">
                 {projectImage && (
                     <section className="flex-1 w-full flex justify-center">

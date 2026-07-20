@@ -24,7 +24,11 @@ const Projects = () => {
     }, []);
 
     if (isLoading){
-        return <FadeLoader />
+        return (
+            <div className="flex items-center justify-center p-20">
+                <FadeLoader color="#5F654C" />
+            </div>
+        );
     }
 
     return (

@@ -19,7 +19,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="bg-[var(--cream)] rounded-[25px] w-75 py-10 px-6 mb-4">
+    <div className="bg-[var(--cream)] rounded-[25px] w-75 h-auto py-10 px-6">
       <h3 className='uppercase text-center md:text-left'> Skills </h3>
       <div className="mt-6 flex flex-col items-center md:items-start gap-1 text-[var(--text)]">
         {skills.map(({ name, icon: Icon }) => (
