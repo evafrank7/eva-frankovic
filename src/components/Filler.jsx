@@ -9,7 +9,7 @@ const Filler = () => {
                     <LiaCrossSolid className='text-[var(--coconut)] text-5xl' />
                 </div>
                 <div className="flex items-center justify-center text-center flex-col">
-                    <h1 className="!text-[var(--coconut)] text-lg">"For I consider that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us."</h1>
+                    <h1 className="!text-[var(--coconut)] text-xl">"Ask, and it will be given to you; seek, and you will find."</h1>
                     <p className="!text-[var(--coconut)] text-lg italic"> - Matthew 7:7 </p>
                 </div>
             </div>
