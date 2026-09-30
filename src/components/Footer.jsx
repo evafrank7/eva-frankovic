@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import Icons from "./Icons";
+import resume from '../assets/Resume/CV.pdf'
 
 function Footer() {
   const linkClass = "px-4 py-4 uppercase";
