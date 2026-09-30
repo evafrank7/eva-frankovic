@@ -15,7 +15,7 @@ function Footer() {
           </NavLink>
         </div>
 
-        <div className="hidden md:flex justify-center gap-8 text-[var(--text)]">
+        <div className="hidden md:flex items-center justify-center gap-8 pt-6 text-[var(--text)]">
           <NavLink to="/" className={linkClass}>
             Home
           </NavLink>
@@ -29,7 +29,7 @@ function Footer() {
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="uppercase"
+            className="uppercase px-3 py-2"
           >
             Resume
           </a>
