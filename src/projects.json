@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "id": 10,
+      "title": "Athena Pastry Co.",
+      "images": [
+        "/project-images/athena-pastry.png"
+      ],
+      "description": "A responsive bakery website built with React, TypeScript, Tailwind CSS, Vite, and React Router, featuring a product menu, custom-order form, and shared shopping cart.",
+      "overview": "Designed and developed a responsive website for Athena Pastry Co., a small bakery specializing in traditional Greek pastries. The site includes an interactive product menu, flavor and quantity selections, a shared shopping cart, a custom-order page, and a checkout interface. React Context keeps cart quantities consistent across the application, while React Router provides seamless navigation between pages. The visual design uses a Mediterranean-inspired cream-and-navy palette, decorative Greek details, and responsive layouts tailored to the bakery's brand.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "React Router"
+      ],
+      "link": "https://github.com/evafrank7/athena-pastry-co/tree/main",
+      "live": "https://athena-pastry-co.onrender.com",
+      "featured": true
+    },
+    {
       "id": 9,
       "title": "React Jobs",
       "images": [
@@ -11,7 +30,7 @@
       "tech": ["React", "Tailwind CSS", "JavaScript", "Vite"],
       "link": "https://github.com/evafrank7/react-jobs",
       "live": "https://react-jobs-listings.onrender.com/",
-      "featured": true
+      "featured": false
     },
     {
       "id": 1,
